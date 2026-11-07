@@ -49,6 +49,7 @@
 | **11** | [`11_esp32cam_ap_wifi_mode`](./11_esp32cam_ap_wifi_mode/11_esp32cam_ap_wifi_mode.ino) | ESP32-CAM | **การเชื่อมต่อ WiFi แบบ Access Point (AP) Mode:** ตั้งค่าให้ ESP32-CAM ปล่อยสัญญาณ WiFi ของตัวเอง (`SSID: ESP32-CAM_AP`, รหัสผ่าน `12345678`) โดยมี IP มาตรฐานคือ `192.168.4.1` |
 | **12** | [`12_wifi_controlled_smart_robot_car`](./12_wifi_controlled_smart_robot_car/12_wifi_controlled_smart_robot_car.ino) | ESP32-CAM | **ระบบ Web Server + กล้องสตรีมวิดีโอและปุ่มควบคุมรถ:** แสดงภาพสดจากกล้องบนหน้าเว็บเบราว์เซอร์ พร้อมปุ่มกดควบคุม 5 ทิศทาง (`Forward`, `Left`, `Stop`, `Right`, `Backward`) ซึ่งจะส่งรหัส `F`, `L`, `S`, `R`, `B` ไปให้ Arduino Uno |
 | **13** | [`13_control_wheels_from_esp32cam`](./13_control_wheels_from_esp32cam/13_control_wheels_from_esp32cam.ino) | Arduino Uno | **โปรแกรมรับคำสั่งขับเคลื่อนล้อจาก ESP32-CAM:** รอรับรหัสตัวอักษร `F`, `B`, `L`, `R`, `S` จากบอร์ด ESP32-CAM ผ่าน `Serial` (`115200 baud`) เพื่อสั่งให้ล้อหมุนเดินหน้า ถอยหลัง เลี้ยวซ้าย เลี้ยวขวา หรือหยุด |
+| **เสริม** | [`movement_function`](./movement_function/movement_function.ino) | Arduino Uno | **รวมฟังก์ชันการเคลื่อนที่ครบทุกทิศทาง:** ประกอบด้วยฟังก์ชัน `car_forward()`, `car_backward()`, `car_left()`, `car_right()` และ `car_stop()` พร้อมตัวอย่างการเรียกใช้งานต่อเนื่อง |
 
 ---
 
